@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Service
+
+metadata:
+  name: payment-service
+  namespace: preprod
+
+  labels:
+    app: payment-service
+    environment: preprod
+
+spec:
+
+  type: ClusterIP
+
+  selector:
+    app: payment-service
+
+  ports:
+    - name: http
+      port: 80
+      targetPort: http
+      protocol: TCP
