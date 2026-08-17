@@ -3,7 +3,7 @@ kind: Deployment
 
 metadata:
   name: payment-service
-  namespace: preprod
+  namespace: guestbook
 
   labels:
     app: payment-service
