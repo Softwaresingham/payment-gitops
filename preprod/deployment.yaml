@@ -34,8 +34,6 @@ spec:
 
     spec:
 
-      serviceAccountName: payment-service
-
       containers:
 
         - name: payment-service
